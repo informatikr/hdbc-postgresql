@@ -64,6 +64,8 @@ module Database.HDBC.PostgreSQL
     (
      -- * Connecting to Databases
      connectPostgreSQL, withPostgreSQL, Connection,
+     -- * Connection Configuration
+     ConnectionInfo(..), defaultConnInfo, renderConnInfo,
      -- * PostgreSQL Error Codes
      --
      -- |When an @SqlError@ is thrown, the field @seState@ is set to one of the following
@@ -78,6 +80,7 @@ where
 
 import Database.HDBC.PostgreSQL.Connection(connectPostgreSQL, withPostgreSQL, Connection())
 import Database.HDBC.PostgreSQL.ErrorCodes
+import Database.HDBC.PostgreSQL.ConnectionInfo
 
 {- $threading
    

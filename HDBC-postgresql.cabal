@@ -37,6 +37,7 @@ Library
     Database.HDBC.PostgreSQL.Parser,
     Database.HDBC.PostgreSQL.PTypeConv,
     Database.HDBC.PostgreSQL.ErrorCodes
+    Database.HDBC.PostgreSQL.ConnectionInfo
   Extensions: ExistentialQuantification, ForeignFunctionInterface
   Build-Depends: base >= 3 && < 5, mtl, HDBC>=2.2.0, parsec, utf8-string,
                  bytestring, old-time, old-locale, time
